@@ -1,13 +1,11 @@
 /**
- * There can be several square edged blocks
+ * There can be several square edged event blocks
  */
 let y = 0
 let x = 0
 loops.everyInterval(2000, function () {
-	
+    basic.showString("" + (y))
 })
 basic.forever(function () {
-    basic.pause(2000)
-    y = y + 1
-    basic.showString(convertToText(y))
+    y = input.max6675Temperature(DigitalPin.P15)
 })
